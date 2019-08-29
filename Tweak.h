@@ -1,4 +1,4 @@
-// LiveSafari Headers
+// LiveDelight Headers
 
 #import <CoreLocation/CoreLocation.h>
 

@@ -6,7 +6,7 @@ ARCHS = armv7 arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = LiveSafari
+TWEAK_NAME = LiveDelight
 LiveSafari_FILES = Tweak.xm
 LiveSafari_FRAMEWORKS = CoreLocation
 

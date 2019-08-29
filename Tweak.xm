@@ -1,4 +1,4 @@
-// LiveSafari, by Skitty
+// LiveDelight, by Skitty and mac-user669
 // Turn Safari's icon into a real compass
 
 #import "Tweak.h"
@@ -7,7 +7,7 @@
 %property (nonatomic, retain) CLLocationManager *locationManager;
 %property (nonatomic, retain) UIImageView *needle;
 - (UIImage *)contentsImage {
-  UIImage *img = [UIImage imageWithContentsOfFile:@"/Library/Application Support/LiveSafari/background.png"];
+  UIImage *img = [UIImage imageWithContentsOfFile:@"/Library/Application Support/LiveDelight/background.png"];
 
   UIImage *maskImg = [UIImage imageWithData:UIImageJPEGRepresentation([self _currentOverlayImage], 1)];
 
@@ -22,7 +22,7 @@
 
   if (!self.needle) {
     self.needle = [[UIImageView
- alloc] initWithImage:[UIImage imageWithContentsOfFile:@"/Library/Application Support/LiveSafari/needle.png"]];
+ alloc] initWithImage:[UIImage imageWithContentsOfFile:@"/Library/Application Support/LiveDelight/needle.png"]];
     [self.needle setCenter:self.center];
     [self addSubview:self.needle];
 
@@ -49,7 +49,7 @@
 }
 %new
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
-  NSLog(@"[LiveSafari] Error: %@", error);
+  NSLog(@"[LiveDelight] Error: %@", error);
 }
 %new
 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager {
